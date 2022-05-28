@@ -1,0 +1,5 @@
+<img class="country-info__img" src="{{flags.svg}}" alt="country flag">
+<h2 class="country-info__title">{{name.official}}</h2>
+<p class="country-info"><b>Capital: </b>{{capital}}</p>
+<p class="country-info"><b>Population: </b>{{population}}</p>
+<p class="country-info"><b>Languages: </b>{{#each languages}}{{#unless @first}}, {{/unless}}{{this}}{{/each}}</p>
