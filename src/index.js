@@ -24,9 +24,7 @@ function onInput () {
 
     fetchCountries(userInput)
     .then(handleResult)
-    .catch(error => {
-        handleError(error);
-    });
+    .catch(handleError);
 }
 
 function renderCountriesList (values, template, target) {
